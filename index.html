@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #dog-walking {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="dog-walking"></canvas>
+
+    <script src="main.js"></script>
+    <script>
+        let canvas = document.querySelector("#dog-walking");
+        let walkingDog = new WalkingDog(canvas);
+        walkingDog.init();
+    </script>
+</body>
+
+</html>
